@@ -1,0 +1,5 @@
+com\jesieljardim\model\ResponseModel.class
+com\jesieljardim\repository\PessoaRepository.class
+com\jesieljardim\PessaoServiceApplication.class
+com\jesieljardim\service\PessoaService.class
+com\jesieljardim\model\PessoaModel.class

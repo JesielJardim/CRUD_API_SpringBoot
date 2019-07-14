@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.jesieljardim.PessaoServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.707 s <<< FAILURE! - in com.jesieljardim.PessaoServiceApplicationTests
+contextLoads(com.jesieljardim.PessaoServiceApplicationTests)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pessoaService': Unsatisfied dependency expressed through field 'pessoaRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pessoaRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract com.jesieljardim.model.PessoaModel com.jesieljardim.repository.PessoaRepository.findOne(java.lang.Integer)! No property findOne found for type PessoaModel!
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pessoaRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract com.jesieljardim.model.PessoaModel com.jesieljardim.repository.PessoaRepository.findOne(java.lang.Integer)! No property findOne found for type PessoaModel!
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract com.jesieljardim.model.PessoaModel com.jesieljardim.repository.PessoaRepository.findOne(java.lang.Integer)! No property findOne found for type PessoaModel!
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property findOne found for type PessoaModel!
+
